@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byway</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/assets/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="hamburger_menu">
+            <ul>
+                <li class="close">
+                    <a href="#"><img class="close_image" onclick="closehamberg()" src="image/assets/icons8-x-24.png" alt="X-icone"/></a>
+                </li>
+                <li class="one">
+                    <a href="#">Cart</a>
+                </li>
+                <li class="two">
+                    <a href="#">Login</a> 
+                </li>
+                <li class="three">
+                    <a href="#">Sing Up</a> 
+                </li>
+                <li class="foure">
+                    <a href="#">Help</a>
+                </li>
+                
+            </ul>
+        </div>
+        <section class="wrapper">
+            <section class="content">
+                <div class="left">
+                    <div class="image_box">
+                        <a href="#"><img src="image/assets/logo.svg" alt="logo" /></a> 
+                    </div>
+                    <h1><a href="#">Byway</a></h1>
+                </div>    
+                <div class="right">
+                    <div onclick="openhamberg()" class="hamburger_image">
+                        <img src="image/assets/icons8-hamburger-32.png"  alt="hamburger_image"/>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/assets/cart.svg" alt="cart" /></a>
+                        </li>
+                        <li>
+                            <button>Log in</button>
+                        </li>
+                        <li>
+                            <button class="singup">Sing Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>      <!-- (header > wrapper > content ) -->
+        </section>      <!-- (header > wrapper) -->
+    </header>
+
+    <section id="spotlight">
+        <section class="wrapper">
+            <section class="item">
+                <div class="left">
+                    <h2>Unlock Your Potential with Byway</h2>
+                    <p>
+                        Welcome to Byway, where learning knows no bounds. We believe that education is the key
+                        to personal and professional growth, and we're here to guide you on your journey to success. 
+                    </p>
+                    <button>Start your instructor journey</button>
+                </div>
+                <div class="right">
+                    <img src="image/assets/spot img 1.png" alt="spot">
+                </div>
+            </section>      <!-- ( spotlight > wrapper > item) -->
+        </section>      <!-- ( spotlight > wrapper) -->
+    </section>      <!-- ( spotlight ) -->
+
+    <section id="courses">
+        <section class="wrapper">
+            <section class="course_item">
+                <div class="content">
+                    <h3>250+</h3>
+                    <small>Courses by our best mentors</small>
+                </div>
+                <span></span>
+                <div class="content">
+                    <h3>1000+</h3>
+                    <small>Courses by our best mentors</small>
+                </div>
+                <span></span>
+                <div class="content">
+                    <h3>15+</h3>
+                    <small>Courses by our best mentors</small>
+                </div>
+                <span></span>
+                <div class="content">
+                    <h3>2400+</h3>
+                    <small>Courses by our best mentors</small>
+                </div>
+            </section>      <!-- ( courses > wrapper > course_item ) -->
+        </section>      <!-- ( courses > wrapper ) -->
+    </section>      <!-- ( courses ) -->
+
+    <section id="top_Categories">
+        <section class="wrapper">
+            <section class="top">
+                <h3>Top Categories</h3>
+                <small><a href="#">See All</a></small>
+            </section>      <!-- ( top_Categories > wrapper > top) -->
+            <section class="bottom">
+                <ul>
+                    <li>
+                        <span>
+                            <div class="imge_box">
+                                <img src="image/assets/astrology.svg" alt="astrology"/>
+                            </div>
+                        </span>
+                        <h4>Astrology</h4>
+                        <small>11 Courses</small>
+                    </li>
+                    <li class="development">
+                        <span>
+                            <div class="image_box">
+                                <img src="image/assets/devlopment.svg" alt="devlopment"/>
+                            </div>
+                        </span>
+                        <h4>Development</h4>
+                        <small>12 Courses</small>
+                    </li>
+                    <li>
+                        <span>
+                            <div class="image_box">
+                                <img src="image/assets/marketing.svg" alt="marketing"/>
+                            </div>
+                        </span>
+                        <h4>Marketing</h4>
+                        <small>12 Courses</small>
+                    </li>
+                    <li>
+                        <span>
+                            <div class="image_box">
+                                <img src="image/assets/physics.svg" alt="physics"/>
+                            </div>
+                        </span>
+                        <h4>Physics</h4>
+                        <small>14 Courses</small>
+                    </li>
+                </ul>
+            </section>      <!-- ( top_Categories > wrapper > bottom) -->
+        </section>      <!-- ( top_Categories > wrapper ) -->
+    </section>      <!-- ( top_Categories >  ) -->
+
+    <section id="top_Courses">
+        <section class="wrapper">
+            <section class="top">
+                <h3>Top Courses</h3>
+                <small>See All</small>
+            </section>     <!-- ( top_courses > wrapper > top) -->
+            <section class="bottom">
+                <section class="card">
+                    <div class="card_image">
+                        <img src="image/assets/bg.jpg" alt="Bg"/>
+                    </div>
+                    <div class="card_content">
+                        <h4>Beginners Guide to Design</h4>
+                        <small>By Ronald Richards</small>
+                        <div class="left_right_items">
+                            <div class="card_image_left">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <div class="card_content_right">
+                                <small>(1200 Ratings)</small>
+                            </div>
+                        </div>
+                        <p>22 Total Hours. 155 Lectures. Beginner</p>
+                        <h5>$149.9</h5>
+                    </div>
+                </section>     <!-- ( top_courses > wrapper > bottom > card) -->
+                <section class="card">
+                    <div class="card_image">
+                        <img src="image/assets/bg.jpg" alt="Bg"/>
+                    </div>
+                    <div class="card_content">
+                        <h4>Beginners Guide to Design</h4>
+                        <small>By Ronald Richards</small>
+                        <div class="left_right_items">
+                            <div class="card_image_left">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <div class="card_content_right">
+                                <small>(1200 Ratings)</small>
+                            </div>
+                        </div>
+                        <p>22 Total Hours. 155 Lectures. Beginner</p>
+                        <h5>$149.9</h5>
+                    </div>
+                </section>     <!-- ( top_courses > wrapper > bottom > card) -->
+                <section class="card">
+                    <div class="card_image">
+                        <img src="image/assets/bg.jpg" alt="Bg"/>
+                    </div>
+                    <div class="card_content">
+                        <h4>Beginners Guide to Design</h4>
+                        <small>By Ronald Richards</small>
+                        <div class="left_right_items">
+                            <div class="card_image_left">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <div class="card_content_right">
+                                <small>(1200 Ratings)</small>
+                            </div>
+                        </div>
+                        <p>22 Total Hours. 155 Lectures. Beginner</p>
+                        <h5>$149.9</h5>
+                    </div>
+                </section>     <!-- ( top_courses > wrapper > bottom > card) -->
+                <section class="card">
+                    <div class="card_image">
+                        <img src="image/assets/bg.jpg" alt="Bg"/>
+                    </div>
+                    <div class="card_content">
+                        <h4>Beginners Guide to Design</h4>
+                        <small>By Ronald Richards</small>
+                        <div class="left_right_items">
+                            <div class="card_image_left">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <div class="card_content_right">
+                                <small>  (1200 Ratings)</small>
+                            </div>
+                        </div>
+                        <p>22 Total Hours. 155 Lectures. Beginner</p>
+                        <h5>$149.9</h5>
+                    </div>
+                </section>     <!-- ( top_courses > wrapper > bottom > card) -->
+            </section>     <!-- ( top_courses > wrapper > bottom) -->
+        </section>     <!-- ( top_courses > wrapper) -->
+    </section>     <!-- ( top_courses ) -->
+
+    <section id="top_instructors">
+        <section class="wrapper">
+            <section class="top">
+                <h3>Top instructors</h3>
+                <small>See All</small>
+            </section>     <!-- ( top_instructor > wrapper > top ) -->
+            <section class="bottom">
+                <section class="item">
+                    <div class="image_box">
+                        <img src="image/assets/model-5.jpg" alt="Model"/>
+                    </div>
+                    <h3>Ronald Richards</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="line"></div>
+                    <div class="box_bottom">
+                        <div class="left">
+                            <div class="image_star">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <span>4.9</span>
+                        </div>
+                        <div class="right">
+                            <small>2400 Students</small>
+                        </div>
+                    </div>
+                </section>    <!-- ( top_instructor > wrapper > bottom > item ) -->
+                <section class="item">
+                    <div class="image_box">
+                        <img src="image/assets/model-5.jpg" alt="Model"/>
+                    </div>
+                    <h3>Ronald Richards</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="line"></div>
+                    <div class="box_bottom">
+                        <div class="left">
+                            <div class="image_star">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <span>4.9</span>
+                        </div>
+                        <div class="right">
+                            <small>2400 Students</small>
+                        </div>
+                    </div>
+                </section>    <!-- ( top_instructor > wrapper > bottom > item ) -->
+                <section class="item">
+                    <div class="image_box">
+                        <img src="image/assets/model-5.jpg" alt="Model"/>
+                    </div>
+                    <h3>Ronald Richards</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="line"></div>
+                    <div class="box_bottom">
+                        <div class="left">
+                            <div class="image_star">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <span>4.9</span>
+                        </div>
+                        <div class="right">
+                            <small>2400 Students</small>
+                        </div>
+                    </div>
+                </section>    <!-- ( top_instructor > wrapper > bottom > item ) -->
+                <section class="item">
+                    <div class="image_box">
+                        <img src="image/assets/model-5.jpg" alt="Model"/>
+                    </div>
+                    <h3>Ronald Richards</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="line"></div>
+                    <div class="box_bottom">
+                        <div class="left">
+                            <div class="image_star">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <span>4.9</span>
+                        </div>
+                        <div class="right">
+                            <small>2400 Students</small>
+                        </div>
+                    </div>
+                </section>    <!-- ( top_instructor > wrapper > bottom > item ) -->
+                <section class="item">
+                    <div class="image_box">
+                        <img src="image/assets/model-5.jpg" alt="Model"/>
+                    </div>
+                    <h3>Ronald Richards</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="line"></div>
+                    <div class="box_bottom">
+                        <div class="left">
+                            <div class="image_star">
+                                <img src="image/assets/star.svg" alt="Star"/>
+                            </div>
+                            <span>4.9</span>
+                        </div>
+                        <div class="right">
+                            <small>2400 Students</small>
+                        </div>
+                    </div>
+                </section>    <!-- ( top_instructor > wrapper > bottom > item ) -->
+            </section>     <!-- ( top_instructor > wrapper > bottom ) -->
+        </section>     <!-- ( top_instructor > wrapper ) -->
+    </section>     <!-- ( top_instructor ) -->
+
+    <section id="about">
+        <section class="wrapper">
+            <section class="top">
+                <h2>What Our Customer Say About Us</h2>
+                <div class="button_box">
+                    <button><img src="image/assets/short-arrow-left.svg" alt="Arrow_right"/></button>
+                    <button><img src="image/assets/short-arrow-right.svg" alt="Arrow_left"/></button>
+                </div>
+            </section>     <!-- ( about > wrapper > top ) -->
+            <section class="bottom">
+                <section class="contenar">
+                    <div class="quotes_image">
+                        <img src="image/assets/quotes.svg" alt="">
+                    </div>
+                    <div class="quotes_text">
+                        <p>
+                            "Byway's tech courses are top-notch! As someone who's always looking to 
+                            stay ahead in the rapidly evolving tech world, I appreciate the up-to-date
+                             content and engaging multimedia. 
+                        </p>
+                        <div class="bottom_item">
+                            <div class="bottom_image">
+                                <img src="image/assets/span-7.svg" alt="">
+                            </div>
+                            <ul>
+                                <li><h6>Jane Doe</h6></li>
+                                <li><small>Designer</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>     <!-- ( about > wrapper > bottom > contenar ) -->
+                <section class="contenar">
+                    <div class="quotes_image">
+                        <img src="image/assets/quotes.svg" alt="">
+                    </div>
+                    <div class="quotes_text">
+                        <p>
+                            "Byway's tech courses are top-notch! As someone who's always looking to 
+                            stay ahead in the rapidly evolving tech world, I appreciate the up-to-date
+                             content and engaging multimedia. 
+                        </p>
+                        <div class="bottom_item">
+                            <div class="bottom_image">
+                                <img src="image/assets/span-7.svg" alt="">
+                            </div>
+                            <ul>
+                                <li><h6>Jane Doe</h6></li>
+                                <li><small>Designer</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>     <!-- ( about > wrapper > bottom > contenar ) -->
+                <section class="contenar">
+                    <div class="quotes_image">
+                        <img src="image/assets/quotes.svg" alt="">
+                    </div>
+                    <div class="quotes_text">
+                        <p>
+                            "Byway's tech courses are top-notch! As someone who's always looking to 
+                            stay ahead in the rapidly evolving tech world, I appreciate the up-to-date
+                             content and engaging multimedia. 
+                        </p>
+                        <div class="bottom_item">
+                            <div class="bottom_image">
+                                <img src="image/assets/span-7.svg" alt="">
+                            </div>
+                            <ul>
+                                <li><h6>Jane Doe</h6></li>
+                                <li><small>Designer</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>     <!-- ( about > wrapper > bottom > contenar ) -->
+            </section>     <!-- ( about > wrapper > bottom ) -->
+        </section>     <!-- ( about > wrapper ) -->
+    </section>     <!-- ( about ) -->
+
+    <section id="instructor">
+        <section class="wrapper">
+            <div class="item_box">
+                <div class="image_box">
+                    <img src="image/assets/model-4.jpg" alt="Model"/>
+                </div>
+                <div class="content_box">
+                    <h4>Become an Instructor</h4>
+                    <p>
+                        Instructors from around the world teach millions of students
+                        on Byway. We provide thetools and skills to teach what you love.
+                    </p>
+                    <button class="one">Start Your Instructor Journey <img src="image/assets/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="content_box">
+                    <h4>Transform your life through education</h4>
+                    <p>
+                        Learners around the world are launching new careers, advancing 
+                        in their fields, and enriching their lives.
+                    </p>
+                    <button class="two">Checkout Courses <img src="image/assets/arrow-right.svg" alt=""></button>
+                </div>
+                <div class="image_box_two">
+                    <img class="two" src="image/assets/model-6.jpg" alt="Model"/>
+                </div>
+            </div>
+        </section>      <!-- ( instructor > wrappper)-->
+    </section>      <!-- ( instructor )-->
+
+    <footer>
+        <section class="wrapper">
+            <section class="item_box">
+                <section class="item_one">
+                    <ul>
+                        <li>
+                             <h1> <img src="image/assets/logo.svg" alt="Logo"/> Byway</h1>
+                        </li>
+                        <li>
+                            <p>
+                                 Empowering learners through accessible and engaging online education. <br>
+                                 Byway is a leading online learning platform dedicated to providing high-quality, 
+                                 flexible, and affordable educational experiences. 
+                             </p>
+                        </li>
+                    </ul>
+                </section>     <!--  (footer > wrapper > item_box > item ) -->
+                <section class="item two">
+                    <ul>
+                        <li><h5>Get Help</h5></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Latest Articles</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </section>     <!--  (footer > wrapper > item_box > item ) -->
+                <section class="item three">
+                    <ul>
+                        <li><h5>Programs</h5></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </section>     <!--  (footer > wrapper > item_box > item ) -->
+                <section class="item">
+                    <ul>
+                        <li><h5>Contact Us</h5></li>
+                        <li><a href="#">Address: 123 Main Street,Anytown,CA 12345</a></li>
+                        <li><a href="#">Tel: +(123) 456-7890</a></li>
+                        <li><a href="#">Mail: bywayedu@webkul.in</a></li>
+                        <li class="image_footer"><img src="image/assets/image 3.svg" alt="Social media"/></li>
+                    </ul>
+                </section>     <!--  (footer > wrapper > item_box > item ) -->
+            </section>      <!--  (footer > wrapper > item_box ) -->
+        </section>      <!--  (footer > wrapper > ) -->
+    </footer>
+
+    <script>
+        let hamberg = document.querySelector('.hamburger_menu');
+        let menubar = document.querySelector('.hamburger_image');
+        let closeicon =document.querySelector('.close_image')
+        function openhamberg() {
+            hamberg.style.display="flex";
+        }
+        function closehamberg(){
+            hamberg.style.display="none";
+        }
+        manubar.addEventListener("click",openhamberg());
+        closeicon.addEventListener("click",closehamberg())
+    </script>
+</body>
+</html>
