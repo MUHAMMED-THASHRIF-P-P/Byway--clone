@@ -39,7 +39,6 @@ header section.content div.left div.image_box {
   height: 40;
 }
 
-
 header section.content div.left div.image_box a img {
   width: 100%;
   display: block;
@@ -128,6 +127,7 @@ header section.content div.right div.hamburger_image {
   background: #fff;
   height: 600px;
   margin-bottom: 50px;
+  padding: 13px 24px;
 }
 #spotlight section.item {
   display: flex;
@@ -166,7 +166,6 @@ header section.content div.right div.hamburger_image {
   width: 40%;
 }
 #spotlight section.item div.right img {
-  /* margin-left: 65px; */
   margin-top: 22px;
   width: 100%;
   display: block;
@@ -606,6 +605,7 @@ header section.content div.right div.hamburger_image {
   line-height: 21px;
   color: #334155;
 }
+
 /* (instructor) */
 #instructor {
   margin: 60px 0 64px;
@@ -622,11 +622,14 @@ header section.content div.right div.hamburger_image {
 }
 #instructor div.item_box div.image_box {
   width: 400px;
-  height: 425px;
+  /* height: 425px; */
 }
 #instructor div.item_box div.image_box img {
   width: 100%;
   display: block;
+}
+#instructor div.item_box div.content_box {
+  width: 540px;
 }
 #instructor div.item_box div.content_box h4 {
   font-size: 20px;
@@ -636,7 +639,8 @@ header section.content div.right div.hamburger_image {
   margin-bottom: 12px;
 }
 #instructor div.item_box div.content_box p {
-  font-size: 14px;
+  width: 100%;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
   color: #1d2939;
@@ -668,10 +672,9 @@ header section.content div.right div.hamburger_image {
   display: inline-block;
 }
 #instructor div.item_box div.image_box_two {
-  width: 471.5px;
-  height: 385px;
+  width: 400px;
 }
-#instructor div.item_box div.image_box_two img.two {
+#instructor div.item_box div.image_box_two img {
   width: 100%;
   display: block;
 }
@@ -731,11 +734,13 @@ footer section.item_box section.item ul li.image_footer img {
   display: block;
   margin-top: 16px;
 }
-
 /* ( max-width:1080px ) */
 @media (max-width: 1080px) {
   #spotlight {
     margin-bottom: 0;
+  }
+  #spotlight section.item div.left h2 {
+    width: 100%;
   }
   #top_Categories section.bottom ul {
     justify-content: center;
@@ -760,9 +765,38 @@ footer section.item_box section.item ul li.image_footer img {
     justify-content: center;
     gap: 10px;
   }
+  #instructor div.item_box div.content_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #instructor div.item_box div.content_box h4 {
+    font-weight: 700;
+  }
+  #instructor div.item_box:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #instructor div.item_box div.image_box {
+    width: 450px;
+    margin-bottom: 45px;
+  }
 }
+
 /* ( max-width:980px ) */
 @media (max-width: 980px) {
+  #courses section.course_item span {
+    display: none;
+  }
+  #courses section.course_item {
+    justify-content: space-around;
+    align-items: center;
+  }
+  #courses section.course_item div.content {
+    margin-bottom: 10px;
+  }
   #top_Categories section.bottom ul {
     gap: 30px;
   }
@@ -781,7 +815,9 @@ footer section.item_box section.item ul li.image_footer img {
   header section.content div.right ul {
     display: none;
   }
-
+  header section.content div.right div.hamburger_image {
+    display: flex;
+  }
   #spotlight section.item div.left h2 {
     width: 93%;
     font-size: 32px;
@@ -800,14 +836,24 @@ footer section.item_box section.item ul li.image_footer img {
     gap: 30px;
     justify-content: center;
   }
-  header section.content div.right div.hamburger_image {
-    display: flex;
+  #courses section.course_item div.content h3 {
+    font-size: 30px;
+    font-weight: 500;
   }
 }
 /* ( max-width:640px ) */
 @media (max-width: 640px) {
   #spotlight section.item div.left {
-    width: 59%;
+    width: 100%;
+  }
+  #spotlight section.item div.right {
+    display: none;
+  }
+  #spotlight section.item div.right img {
+    display: none;
+  }
+  #spotlight {
+    height: 380px;
   }
   #about section.top h2 {
     width: 47%;
@@ -820,7 +866,6 @@ footer section.item_box section.item ul li.image_footer img {
     align-items: center;
   }
   #instructor div.item_box div.content_box h4 {
-    margin-top: 20px;
     font-weight: 700;
   }
   #instructor div.item_box:last-child {
@@ -843,18 +888,16 @@ footer section.item_box section.item ul li.image_footer img {
     font-size: 14px;
   }
   #instructor {
-    margin-top: 0;
+    margin-top: 40px;
   }
   #instructor div.item_box div.image_box {
     width: 312px;
   }
-  #instructor div.item_box div.image_box img {
-    margin-top: 93px;
+  #instructor div.item_box div.content_box {
+    width: 500px;
   }
-  #instructor div.item_box div.image_box_two {
-    width: 360px;
-    height: 293px;
-    margin-left: 59px;
+  #instructor div.item_box div.content_box.tow {
+    width: 100%;
   }
   footer section.item_box {
     justify-content: center;
@@ -867,6 +910,12 @@ footer section.item_box section.item ul li.image_footer img {
 }
 /* ( max-width:480px ) */
 @media (max-width: 480px) {
+  #spotlight {
+    height: 380px;
+  }
+  #spotlight section.item div.right {
+    display: none;
+  }
   #spotlight section.item div.right img {
     display: none;
   }
@@ -892,6 +941,9 @@ footer section.item_box section.item ul li.image_footer img {
 }
 /* ( max-width:360px ) */
 @media (max-width: 360px) {
+  #spotlight {
+    margin-bottom: 20px;
+  }
   #about section.top h2 {
     font-size: 20px;
     line-height: 22px;
@@ -907,12 +959,6 @@ footer section.item_box section.item ul li.image_footer img {
   }
   #instructor div.item_box div.image_box {
     width: 246px;
-  }
-  #instructor div.item_box div.image_box img {
-    margin-top: 46px;
-  }
-  #instructor div.item_box div.content_box {
-    margin-top: -103px;
   }
   #instructor div.item_box div.image_box_two {
     width: 246px;
