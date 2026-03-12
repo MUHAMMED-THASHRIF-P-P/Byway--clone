@@ -66,7 +66,7 @@ header section.content div.right ul li button {
 }
 
 header section.content div.right ul li button.singup {
-  background: #334155;
+  background: #334155;/*pliz chack the. background color/*
   color: #fff;
 }
 /* (hamburger) */
